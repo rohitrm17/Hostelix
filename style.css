@@ -200,6 +200,44 @@ footer p {
     justify-content: space-evenly;
 }
 
+/* sub footer */
+.sub-footer{
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* team section */
+.team-header{
+    text-align: center;
+}
+
+.team-container {
+    justify-content: center;
+    gap: 50px;
+    padding: 40px var(--padding-inline-section);
+}
+
+.team-left{
+    max-width: 40%;
+    line-height: 2rem;
+}
+
+.team-right{
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.image-card{
+    width: 30%;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.image-card img {
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
 /* Animation of header */
 .easeload {
     --delay: 5s;
