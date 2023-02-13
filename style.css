@@ -1,3 +1,9 @@
+* {
+    /* border: 1px solid black; */
+    font-size: 20px;
+    /* box-sizing: border-box; */
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -104,6 +110,7 @@ header {
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   }
 /* navbar end */
+
 .icon-class {
     font-size: 1.5rem;
     color: white;
@@ -116,9 +123,37 @@ header {
 }
 
 .easeload {
-    opacity: 0;
-    -webkit-transition: all 4s ease;
-    -moz-transition: all 4s ease;
-    -ms-transition: all 4s ease;
-    -o-transition: all 4s ease;
+    --delay: 4s;
+    animation: fadeInAnimation ease var(--delay);
+    -webkit-transition: all var(--delay) ease;
+    -moz-transition: all var(--delay) ease;
+    -ms-transition: all var(--delay) ease;
+    -o-transition: all var(--delay) ease;
+}
+
+.easeload2 {
+    --delay: 4s;
+    animation: fadeInAnimation2 ease var(--delay);
+    -webkit-transition: all var(--delay) ease;
+    -moz-transition: all var(--delay) ease;
+    -ms-transition: all var(--delay) ease;
+    -o-transition: all var(--delay) ease;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInAnimation2 {
+    0%, 35%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
