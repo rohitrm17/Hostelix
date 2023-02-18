@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
 </head>
 
 <body>
@@ -21,8 +20,12 @@
                 <a href="index.html" class="company-name"> HOSTELIX </a>
                 <div class="nav-links" id="nav-links">
                     <ul class="flex">
-                        <li><a href="index.html" class="hover-link">Home</a></li>
-                        <li><a href="team.html" class="hover-link">Team</a></li>
+                        <li>
+                            <a href="index.html" class="hover-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="team.html" class="hover-link">Team</a>
+                        </li>
                         <li><a href="#" class="hover-link">Contact</a></li>
                     </ul>
                 </div>
@@ -36,7 +39,10 @@
                     <img src="./images/logo.png" class="header-top-image" alt="Hostelix logo" />
                 </div>
                 <div class="header-bottom">
-                    <h1>You Dream. We Deliver.</h1>
+                    <h1>
+                        <span>You Dream.</span>
+                        <span>We Deliver.</span>
+                    </h1>
                 </div>
             </div>
         </header>
@@ -68,6 +74,7 @@
     </section>
 
     <!-- stats-section -->
+
     <section class="stats-section">
         <div class="container">
             <div class="stats flex">
@@ -91,14 +98,70 @@
         </div>
     </section>
 
-    <section class="client-response-section" style="height: 80vh"></section>
+    <section class="client-response-section">
+        <h2 class="testimonial-header">Customer feedback</h2>
+        <div class="container flex testimonial-container">
+            <a class="prev" onclick="plusTestimonials(-1)">&#10094;</a>
+            <div class="testimonial testimonial-fade">
+                <p>
+                    <i class="bi bi-quote"></i>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Quisquam cum dolor voluptate obcaecati blanditiis,
+                    explicabo numquam natus dignissimos, aut soluta quam
+                    accusamus optio reiciendis incidunt unde eaque iusto
+                    ducimus id.
+                </p>
+            </div>
+            <div class="testimonial testimonial-fade">
+                <p>
+                    <i class="bi bi-quote"></i>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Corporis cumque asperiores, obcaecati neque, iste
+                    assumenda itaque deleniti nam autem id laboriosam.
+                    Reprehenderit quod vero molestiae.
+                </p>
+            </div>
+            <div class="testimonial testimonial-fade">
+                <p>
+                    <i class="bi bi-quote"></i>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Nostrum libero sapiente facere facilis at amet,
+                    excepturi, dolor voluptas nemo quaerat cupiditate,
+                    repellat reprehenderit repellendus laborum.
+                </p>
+            </div>
+            <div class="testimonial testimonial-fade">
+                <p>
+                    <i class="bi bi-quote"></i>
+                    Lorem Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quisquam libero totam cupiditate et
+                    sit quibusdam debitis atque quia nemo porro.
+                </p>
+            </div>
+            <div class="testimonial testimonial-fade">
+                <p>
+                    <i class="bi bi-quote"></i>
+                    Lorem Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quisquam libero totam cupiditate et
+                    sit quibusdam debitis atque quia nemo porro.
+                </p>
+            </div>
+            <a class="next" onclick="plusTestimonials(1)">&#10095;</a>
+        </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentTestimonial(0)"></span>
+            <span class="dot" onclick="currentTestimonial(1)"></span>
+            <span class="dot" onclick="currentTestimonial(2)"></span>
+        </div>
+    </section>
 
     <!-- footer -->
     <footer>
         <div class="container">
             <div class="footer-top">
                 <a href="#" class="hover-link"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/hostelix_official/" class="hover-link"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.instagram.com/hostelix_official/" class="hover-link"><i
+                        class="bi bi-instagram"></i></a>
                 <a href="#" class="hover-link"><i class="bi bi-envelope"></i></a>
                 <a href="#" class="hover-link"><i class="bi bi-twitter"></i></a>
             </div>
@@ -124,10 +187,10 @@
                 </div>
             </div>
             <div class="sub-footer">
-                <p>Created By Hostelix Tech Team | All Rights Reserved</p>
+                <p>Created By Hostelix Tech Team</p>
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
