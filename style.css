@@ -6,6 +6,8 @@
 }
 
 :root {
+    --primary-background-color: #0a1245;
+    --secondary-background-color: #ffffff26;
     --primary-text-color: #f9f9fc;
     --secondary-text-color: #e5e5e5;
     --accent-color: #edbf73;
@@ -16,7 +18,8 @@
 body {
     font-family: 'Times New Roman', sans-serif;
     color: var(--primary-text-color);
-    background-color: #241f1f;
+    /* background-color: #241f1f; */
+    background-color: var(--primary-background-color);
 }
 
 h1 {
@@ -150,22 +153,25 @@ section {
 }
 
 /* statistics section */
-.stats-section{
+.stats-section {
     height: 100vh;
 }
 
 .stats-container {
     position: relative;
-    background-color: #524f4f;
+    background-color: var(--secondary-background-color);
     top: 50%;
     translate: 0 -50% 0;
-    /* #7a7373; */
+    height: 25%;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .stats {
     justify-content: space-evenly;
     gap: 20px;
     padding: 20px;
+    width: 100%;
 }
 
 .stat {
@@ -176,13 +182,14 @@ section {
     height: 100px;
 }
 
-.stat p>i{
+.stat p>i {
     font-size: 25px;
 }
 
 /* client-response-section */
-.testimonial-header{
-text-align: center;
+.testimonial-header {
+    text-align: center;
+    padding: 20px;
 }
 
 .testimonial-container {
@@ -192,7 +199,7 @@ text-align: center;
 }
 
 .testimonial {
-    background-color: #524f4f;
+    background-color: var(--secondary-background-color);
     border-radius: 20px;
     width: 30%;
     height: 350px;
@@ -216,9 +223,9 @@ text-align: center;
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: #524f4f;
+    color: #ffffff66;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.6rem;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -235,10 +242,10 @@ text-align: center;
 
 .dot {
     cursor: pointer;
-    height: 12px;
-    width: 12px;
+    height: 0.75rem;
+    width: 0.75rem;
     margin: 20px 2px;
-    background-color: #524f4f;
+    background-color: var(--secondary-background-color);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -252,7 +259,7 @@ text-align: center;
 /* footer */
 footer {
     padding: 30px 0 50px 0;
-    background-color: #524f4f;
+    background-color: var(--secondary-background-color);
 }
 
 footer p {
