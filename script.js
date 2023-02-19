@@ -46,15 +46,3 @@ function showTestimonials() {
 
     dots[pageNo].className += " dot-active";
 };
-
-
-function showTestimonials2(pageNo) {
-
-    //   let dots = document.getElementsByClassName("dot");
-
-    //   for (i = 0; i < dots.length; i++) {
-    //     dots[i].className = dots[i].className.replace(" active", "");
-    //   }
-
-    //   dots[testimonialIndex-1].className += " active";
-}

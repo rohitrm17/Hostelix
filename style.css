@@ -150,14 +150,22 @@ section {
 }
 
 /* statistics section */
-.stats-section {
+.stats-section{
+    height: 100vh;
+}
+
+.stats-container {
+    position: relative;
     background-color: #524f4f;
+    top: 50%;
+    translate: 0 -50% 0;
     /* #7a7373; */
 }
 
 .stats {
     justify-content: space-evenly;
     gap: 20px;
+    padding: 20px;
 }
 
 .stat {
@@ -166,6 +174,10 @@ section {
     justify-content: center;
     text-align: center;
     height: 100px;
+}
+
+.stat p>i{
+    font-size: 25px;
 }
 
 /* client-response-section */
