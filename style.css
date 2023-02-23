@@ -50,6 +50,17 @@ section {
     margin-bottom: 20px;
 }
 
+/* To remove the arrows from input type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 /* Classes definition */
 .container {
     max-width: 1180px;
@@ -135,10 +146,11 @@ section {
     padding: 20px;
 }
 
-.works-left{
+.works-left {
     width: 50%;
 }
-.works-right{
+
+.works-right {
     width: 50%;
     padding: var(--padding-inline-section);
 }
@@ -307,7 +319,7 @@ footer p {
     text-align: center;
 }
 
-.team-header h3{
+.team-header h3 {
     padding: 20px;
 }
 
@@ -330,33 +342,107 @@ footer p {
     border-radius: 20px;
 }
 
-.image-card p{
+.image-card p {
     font-family: 'Times New Roman', sans-serif;
     font-size: 1.2rem;
 }
 
 /* Contact section */
-.contact-header{
+.contact-header {
     text-align: center;
     padding: var(--padding-inline-section);
 }
 
-.contact-container{
+.contact-container {
     gap: 20px;
     justify-content: space-evenly;
 }
 
-.contact-left{
+.contact-left {
     align-items: center;
 }
 
-.contact-right{
+.contact-right {
     width: 40%;
     padding: var(--padding-inline-section);
 }
 
-.contact-right p{
+.contact-right p {
     padding: var(--padding-inline-section);
+}
+
+/* Query section */
+.query-container {
+    padding: var(--padding-inline-section);
+}
+
+.query-header {
+    text-align: center;
+}
+
+.query-box {
+    /* position: relative; */
+    margin: 20px;
+    background-color: var(--secondary-background-color);
+    border-radius: 20px;
+    width: 60%;
+}
+
+.query-form {
+    padding: 40px;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+}
+
+.query-field {
+    position: relative;
+    width: 40%;
+}
+
+.query-input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    background: transparent;
+}
+
+.query-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #ffffff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.query-input:focus~.query-label,
+.query-input:valid~.query-label {
+    top: -20px;
+    left: 0;
+    color: var(--accent-color);
+    font-size: 16px;
+}
+
+.query-submit{
+    color: #ffffff;
+    padding: 10px;
+    border: 1px #ffffff solid;
+    border-radius: 10px;
+    font: 18px;
+}
+
+.query-submit:hover {
+color: var(--accent-color);
+border: 1px var(--accent-color) solid;
 }
 
 /* Fading Animation of header */
