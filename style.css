@@ -66,11 +66,13 @@ input[type=number] {
     max-width: 1180px;
     margin-inline: auto;
     padding-inline: var(--padding-inline-section);
+    overflow: hidden;
 }
 
 .nav-container {
     margin-inline: auto;
     padding: 1.2em 3em;
+    position: relative;
 }
 
 .flex {
@@ -121,6 +123,10 @@ input[type=number] {
     gap: 40px;
 }
 
+.nav-toggle{
+    display: none;
+}
+
 /* header */
 /* header{
     height: 100vh;
@@ -131,6 +137,7 @@ input[type=number] {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 .header-top-image {

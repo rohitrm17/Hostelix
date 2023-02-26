@@ -46,3 +46,17 @@ function showTestimonials() {
 
     dots[pageNo].className += " dot-active";
 };
+
+// nav link media query
+const navToggleBtn = document.getElementById('nav-toggle');
+const navLinks = document.getElementById('nav-links');
+
+navToggleBtn.onclick = () => {
+    navLinks.classList.toggle('active');
+}
+
+document.onclick = (e) => {
+    if(e.target.id !== 'nav-toggle2'){
+        navLinks.classList.remove('active');
+    }
+}
