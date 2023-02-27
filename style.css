@@ -69,6 +69,20 @@ input[type=number] {
     overflow: hidden;
 }
 
+.button-primary{
+    color: #ffffff;
+    padding: 10px;
+    border: 1px #ffffff solid;
+    border-radius: 10px;
+    font: 18px;
+    background-color: transparent;
+}
+
+.button-primary:hover {
+color: var(--accent-color);
+border: 1px var(--accent-color) solid;
+}
+
 .nav-container {
     margin-inline: auto;
     padding: 1.2em 3em;
@@ -437,19 +451,6 @@ footer p {
     left: 0;
     color: var(--accent-color);
     font-size: 16px;
-}
-
-.query-submit{
-    color: #ffffff;
-    padding: 10px;
-    border: 1px #ffffff solid;
-    border-radius: 10px;
-    font: 18px;
-}
-
-.query-submit:hover {
-color: var(--accent-color);
-border: 1px var(--accent-color) solid;
 }
 
 /* Fading Animation of header */

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Time Series | Hostelix</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="stockTimeSeries.css" />
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="nav-container main-nav flex">
+            <a href="../index.html" class="company-name"> HOSTELIX </a>
+            <div class="nav-links" id="nav-links">
+                <ul class="flex">
+                    <li><a href="stockTimeSeries.html" class="hover-link">Stock Time Series</a></li>
+                    <li><a href="../team.html" class="hover-link">Team</a></li>
+                    <li><a href="../contact.html" class="hover-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="stockTimeSeries-section">
+        <div class="container">
+            <div class="company-container flex">
+                <div class="company-dropdown">
+                    <input type="text" class="textBox" placeholder="Select company" readonly>
+                    <div class="options">
+                        <p onclick="showCompany('Apple Inc(AAPL)')" >Apple Inc(AAPL)</p>
+                        <p onclick="showCompany('Microsoft Corp(MSFT)')" >Microsoft Corp(MSFT)</p>
+                        <p onclick="showCompany('International Business Machine(IBM)')" >International Business Machine(IBM)</p>
+                        <p onclick="showCompany('Reliance(RELIANCE.BSE)')" >Reliance</p>
+                        <p onclick="showCompany('Bosch(BOSCHLTD.BSE)')" >Bosch</p>
+                    </div>
+                </div>
+                <div class="company-buttons flex">
+                    <button id="get_data" onclick="getCompanyData()" class="button-primary">Get Data</button>
+                    <button id="download_data" onclick="downloadCompanyData()" class="button-primary">Download Data (CSV)</button>
+                </div>
+            </div>
+            
+            <div class="loading-container" id="loading-container">
+                <p>Loading data...</p>
+                <progress></progress>
+            </div>
+
+            <div id="chartContainer" class="chart-container"></div>
+            <div id="table_container" class="table-container"></div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <a href="#" class="hover-link"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/hostelix_official/" class="hover-link"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="#" class="hover-link"><i class="bi bi-envelope"></i></a>
+                <a href="#" class="hover-link"><i class="bi bi-twitter"></i></a>
+            </div>
+            <div class="flex footer-bottom">
+                <div class="link-column flex">
+                    <h4>Products</h4>
+                    <a href="#" class="hover-link">Product 1</a>
+                    <a href="#" class="hover-link">Product 2</a>
+                    <a href="#" class="hover-link">Product 3</a>
+                </div>
+
+                <div class="link-column flex">
+                    <h4>Other links</h4>
+                    <a href="#" class="hover-link">link 1</a>
+                    <a href="#" class="hover-link">link 2</a>
+                    <a href="#" class="hover-link">link 3</a>
+                </div>
+
+                <div class="link-column flex">
+                    <h4>Contact Us</h4>
+                    <p>Address: Hubli, Karnataka, India</p>
+                    <p>Contact No: +91 1234567890</p>
+                </div>
+            </div>
+            <div class="sub-footer">
+                <p>Created By Hostelix Tech Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    
+    <script src="stockTimeSeries.js"></script>
+
+</body>
+
+</html>
