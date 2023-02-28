@@ -21,9 +21,19 @@
             <a href="../index.html" class="company-name"> HOSTELIX </a>
             <div class="nav-links" id="nav-links">
                 <ul class="flex">
-                    <li><a href="stockTimeSeries.html" class="hover-link">Stock Time Series</a></li>
+                    <li><a href="../index.html" class="hover-link">Home</a></li>
                     <li><a href="../team.html" class="hover-link">Team</a></li>
                     <li><a href="../contact.html" class="hover-link">Contact</a></li>
+                    <li>
+                        <div class="tools-dropdown">
+                            <button class="dropdown-button" id="dropdown-button" onclick="showTools()">Tools</button>
+                            <div class="tools-list">
+                                <a href="stockTimeSeries.html">Stock Time Series</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -31,9 +41,12 @@
 
     <section class="stockTimeSeries-section">
         <div class="container">
+            <div class="stockTimeSeries-header">
+                <h2>Stock Time Series</h2>
+            </div>
             <div class="company-container flex">
-                <div class="company-dropdown">
-                    <input type="text" class="textBox" placeholder="Select company" readonly>
+                <div class="company-dropdown" >
+                    <input type="text" class="textBox" id="textBox" placeholder="Select company" readonly>
                     <div class="options">
                         <p onclick="showCompany('Apple Inc(AAPL)')" >Apple Inc(AAPL)</p>
                         <p onclick="showCompany('Microsoft Corp(MSFT)')" >Microsoft Corp(MSFT)</p>
@@ -100,6 +113,23 @@
     
     <script src="stockTimeSeries.js"></script>
 
+    <script>
+        // navbar tools dropdown
+        document.onclick = (e) => {
+            if(e.target.id !== 'dropdown-button'){
+                document.querySelector('.tools-list').classList.remove('tools-active');
+            }
+            // closing company dropdown if clicked outside
+            if (e.target.id !== 'textBox') {
+                document.querySelector('.company-dropdown').classList.remove('company-active');
+            }
+        }
+        
+        function showTools() {
+            document.querySelector('.tools-list').classList.toggle('tools-active');
+        }
+        
+    </script>
 </body>
 
 </html>

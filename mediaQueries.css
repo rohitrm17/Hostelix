@@ -9,15 +9,17 @@
     }
 
     .nav-links{
-        position: absolute;
+        position: fixed;
         left: -100%;
-        top: calc(100% + 0.8rem);
+        /* top: calc(100% + 0.8rem); */
+        top: 0;
         width: 50%;
-        height: fit-content;
+        height: 100vh;
+        /* height: fit-content; */
         padding-block: 20px;
         background-color: var(--secondary-background-color);
         backdrop-filter: blur(20px);
-        border-radius: 10px;
+        /* border-radius: 10px; */
         transition: 0.5s ease-in-out;
     }
 
@@ -52,5 +54,10 @@
         font-size: 2.2rem;
         float: right;
         line-height: 200%;
+    }
+
+    .tools-list{
+        border-radius: none;
+        background-color: transparent;
     }
 }

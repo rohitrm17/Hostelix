@@ -1,3 +1,23 @@
+/* Firefox */
+::placeholder {
+    color: #ffffff;
+}
+
+/* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+/* Microsoft Edge */
+::-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.stockTimeSeries-header {
+    text-align: center;
+    padding: var(--padding-inline-section);
+}
+
 .loading-container {
     text-align: center;
     margin-block: 20px;
@@ -127,7 +147,10 @@
     background-color: var(--secondary-background-color);
 }
 
-.table-container table, td, tr, th{
+.table-container table,
+td,
+tr,
+th {
     border: none;
     border-collapse: collapse;
 }

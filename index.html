@@ -22,12 +22,22 @@
                 <div class="nav-links" id="nav-links">
                     <ul class="flex">
                         <li>
-                            <a href="tools/stockTimeSeries.html" class="hover-link">Stock Time Series</a>
+                            <a href="index.html" class="hover-link">Home</a>
                         </li>
                         <li>
                             <a href="team.html" class="hover-link">Team</a>
                         </li>
                         <li><a href="contact.html" class="hover-link">Contact</a></li>
+                        <li>
+                            <div class="tools-dropdown">
+                                <button class="dropdown-button" id="dropdown-button" onclick="showTools()">Tools</button>
+                                <div class="tools-list">
+                                    <a href="tools/stockTimeSeries.html">Stock Time Series</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <a href="#" class="nav-toggle hover-link" id="nav-toggle">
@@ -200,6 +210,23 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+        // navbar tools dropdown
+        document.onclick = (e) => {
+            if(e.target.id !== 'dropdown-button'){
+                document.querySelector('.tools-list').classList.remove('tools-active');
+            }
+
+            // closing navbar when clicked outside
+            if(e.target.id !== 'nav-toggle2' && e.target.id !== 'dropdown-button'){
+                navLinks.classList.remove('active');
+            }
+        }
+        
+        function showTools() {
+            document.querySelector('.tools-list').classList.toggle('tools-active');
+        }
+    </script>
 </body>
 
 </html>

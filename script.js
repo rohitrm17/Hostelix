@@ -55,8 +55,8 @@ navToggleBtn.onclick = () => {
     navLinks.classList.toggle('active');
 }
 
-document.onclick = (e) => {
-    if(e.target.id !== 'nav-toggle2'){
-        navLinks.classList.remove('active');
-    }
-}
+// document.onclick = (e) => {
+//     if(e.target.id !== 'nav-toggle2'){
+//         navLinks.classList.remove('active');
+//     }
+// }
