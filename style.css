@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     /* border: 1px solid white; */
+    font-family: 'Times New Roman', 'Segoe UI', sans-serif;
 }
 
 :root {
@@ -16,7 +17,7 @@
 }
 
 body {
-    font-family: 'Times New Roman', sans-serif;
+    /* font-family: 'Times New Roman', sans-serif; */
     color: var(--primary-text-color);
     background-color: var(--primary-background-color);
 }
@@ -35,7 +36,7 @@ h3 {
 
 p {
     font-size: 1.25rem;
-    font-family: 'Segoe UI', sans-serif;
+    /* font-family: 'Segoe UI', sans-serif; */
     color: var(--secondary-text-color);
     line-height: 1.8rem;
 }
@@ -202,35 +203,20 @@ input[type=number] {
 
 /* HP working */
 .works-sec-container {
-    justify-content: center;
     gap: 40px;
-    padding: 20px;
-}
-
-.works-left {
-    width: 50%;
-}
-
-.works-right {
-    width: 50%;
     padding: var(--padding-inline-section);
 }
 
-.works-left img {
+.works-section :nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.works-image {
     width: 100%;
 }
 
-.works-right h2 {
-    text-align: end;
-    margin-right: 50px;
-}
-
-.works-right h3 {
-    margin-top: 10px;
-}
-
-.works-right li {
-    line-height: 1.4rem;
+.works-content p {
+    line-height: 1.8rem;
 }
 
 /* statistics section */
@@ -339,7 +325,7 @@ input[type=number] {
 
 /* footer */
 footer {
-    padding: 30px 0 50px 0;
+    padding: 40px;
     background-color: var(--secondary-background-color);
 }
 
@@ -351,7 +337,7 @@ footer p {
 
 .footer-top {
     text-align: center;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .footer-top a {
@@ -371,7 +357,7 @@ footer p {
 
 /* sub footer */
 .sub-footer {
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
 }
 

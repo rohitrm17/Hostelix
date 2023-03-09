@@ -30,7 +30,8 @@
                         <li><a href="contact.html" class="hover-link">Contact</a></li>
                         <li>
                             <div class="tools-dropdown">
-                                <button class="dropdown-button" id="dropdown-button" onclick="showTools()">Tools</button>
+                                <button class="dropdown-button" id="dropdown-button"
+                                    onclick="showTools()">Tools</button>
                                 <div class="tools-list">
                                     <a href="tools/stockTimeSeries.html">Stock Time Series</a>
                                     <a href="#">Link 2</a>
@@ -65,24 +66,51 @@
     <!-- HP working -->
     <section class="works-section">
         <div class="container works-sec-container flex">
-            <div class="works-left">
+            <div class="works-image">
                 <img src="https://via.placeholder.com/500x300" alt="How Hostelix Works" />
             </div>
-            <div class="works-right">
-                <h2>How Hostelix Works?</h2>
+            <div class="works-content">
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing
-                    elit. Doloremque veritatis harum rem quasi natus ullam
-                    cumque nostrum, odit doloribus perferendis laborum,
-                    atque eveniet veniam dolore quidem. Et molestiae
-                    voluptatibus debitis!
+                    At Hostelix we offer comprehensive financial planning and investment advising services that are
+                    tailored to our clients' specific needs.
                 </p>
-                <h3>Benefits</h3>
-                <ul>
-                    <li>Lorem</li>
-                    <li>Lorem</li>
-                    <li>Lorem</li>
-                </ul>
+            </div>
+        </div>
+
+        <div class="container works-sec-container flex">
+            <div class="works-image">
+                <img src="https://via.placeholder.com/500x300" alt="How Hostelix Works" />
+            </div>
+            <div class="works-content">
+                <p>
+                    Our versed staff are focused on assisting you in extending your financial goals.
+                    We acknowledge that the financial environment may be perplexing and intimidating, but we think that
+                    everyone deserves access to adequate counsel and direction.
+                </p>
+            </div>
+        </div>
+
+        <div class="container works-sec-container flex">
+            <div class="works-image">
+                <img src="https://via.placeholder.com/500x300" alt="How Hostelix Works" />
+            </div>
+            <div class="works-content">
+                <p>
+                    We endeavor to give you a personalized experience that is specific to your individual requirements
+                    and circumstances. We further extend our assistance with your new and current investments.
+                </p>
+            </div>
+        </div>
+
+        <div class="container works-sec-container flex">
+            <div class="works-image">
+                <img src="https://via.placeholder.com/500x300" alt="How Hostelix Works" />
+            </div>
+            <div class="works-content">
+                <p>
+                    Our team is committed to offering the finest caliber of service, and we are effusive about assisting
+                    clients in achieving their financial goals. We believe in building long-term Engagement with our
+                    clients. </p>
             </div>
         </div>
     </section>
@@ -94,22 +122,22 @@
             <div class="stats flex">
                 <div class="stat">
                     <p><i class="bi bi-people"></i></p>
-                    <h3>123</h3>
+                    <h3>50+</h3>
                     <p>Clients</p>
                 </div>
                 <div class="stat">
                     <p><i class="bi bi-geo-alt"></i></p>
-                    <h3>123</h3>
+                    <h3>All over India</h3>
                     <p>Places served</p>
                 </div>
                 <div class="stat">
                     <p><i class="bi bi-stopwatch"></i></p>
-                    <h3>123</h3>
+                    <h3>43,800</h3>
                     <p>Hours worked</p>
                 </div>
                 <div class="stat">
                     <p><i class="bi bi-check2-square"></i></p>
-                    <h3>123</h3>
+                    <h3>123?</h3>
                     <p>Tasks completed</p>
                 </div>
             </div>
@@ -183,46 +211,26 @@
                 <a href="#" class="hover-link"><i class="bi bi-envelope"></i></a>
                 <a href="#" class="hover-link"><i class="bi bi-twitter"></i></a>
             </div>
-            <div class="flex footer-bottom">
-                <div class="link-column flex">
-                    <h4>Products</h4>
-                    <a href="#" class="hover-link">Product 1</a>
-                    <a href="#" class="hover-link">Product 2</a>
-                    <a href="#" class="hover-link">Product 3</a>
-                </div>
-
-                <div class="link-column flex">
-                    <h4>Other links</h4>
-                    <a href="#" class="hover-link">link 1</a>
-                    <a href="#" class="hover-link">link 2</a>
-                    <a href="#" class="hover-link">link 3</a>
-                </div>
-
-                <div class="link-column flex">
-                    <h4>Contact Us</h4>
-                    <p>Address: Hubli, Karnataka, India</p>
-                    <p>Contact No: +91 1234567890</p>
-                </div>
-            </div>
             <div class="sub-footer">
                 <p>Created By Hostelix Tech Team</p>
             </div>
         </div>
     </footer>
+    
     <script src="script.js"></script>
     <script>
         // navbar tools dropdown
         document.onclick = (e) => {
-            if(e.target.id !== 'dropdown-button'){
+            if (e.target.id !== 'dropdown-button') {
                 document.querySelector('.tools-list').classList.remove('tools-active');
             }
 
             // closing navbar when clicked outside
-            if(e.target.id !== 'nav-toggle2' && e.target.id !== 'dropdown-button'){
+            if (e.target.id !== 'nav-toggle2' && e.target.id !== 'dropdown-button') {
                 navLinks.classList.remove('active');
             }
         }
-        
+
         function showTools() {
             document.querySelector('.tools-list').classList.toggle('tools-active');
         }
