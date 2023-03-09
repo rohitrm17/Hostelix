@@ -150,7 +150,6 @@ input[type=number] {
     outline: none;
     color: white;
     background-color: inherit;
-    font-family: inherit;
     transition: 0.2s ease-out;
 }
 
@@ -331,7 +330,6 @@ footer {
 
 footer p {
     font-size: 1rem;
-    font-family: 'Times New Roman', sans-serif;
     color: var(--secondary-text-color);
 }
 
@@ -390,7 +388,6 @@ footer p {
 }
 
 .image-card p {
-    font-family: 'Times New Roman', sans-serif;
     font-size: 1.2rem;
 }
 
